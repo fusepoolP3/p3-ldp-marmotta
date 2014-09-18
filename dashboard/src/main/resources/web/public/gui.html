@@ -1,0 +1,88 @@
+<!--
+
+    Copyright (C) 2014 Geox Terinformatikai.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!DOCTYPE HTML>
+<html lang="hu">
+	<head>
+		<title>Fusepool P3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<link href="styles/gui.css" rel="stylesheet" type="text/css" />
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="lib/jquery/jquery-1.9.1.min.js"></script>
+		<!-- <script type="text/javascript" src="lib/N3/N3.js"></script> -->
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/ldpUI_functions.js"></script>
+        <link rel="shortcut icon" href="images/fusepool_icon.png" />
+	</head>                                                                       
+	<body>
+		<div class="container">
+            <a href="http://p3.fusepool.eu">
+                <img src="images/fusepoolp3.png" title="Fusepool P3" alt="Fusepool P3" id="logo" />
+            </a>
+        </div>
+		<div class="container">
+			<form class="form-horizontal" id="simple-ui-form" role="form">
+				<div class="form-group">
+					<label for="base" class="col-sm-2 control-label">Base</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" value="http://localhost:8080/ldp" id="base" placeholder="Base">
+					</div>
+				</div>
+				<hr/>
+				<h4>Open</h4>
+				<div class="form-group">
+					<label for="open-container" class="col-sm-2 control-label">Container</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" value="ab3ba61b-b6c9-4f16-9e08-9bdfb99d9151" id="open-container" placeholder="Container">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-primary" onclick="get()" >Get content</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="textInput" class="col-sm-2 control-label">Text</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" rows="5" id="textInput"></textarea>
+					</div>
+				</div>
+				<hr/>
+				<h4>Save</h4>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<div class="radio">
+						  <label> <input type="radio" name="save-as" id="optionsRadios1" value="0" checked="checked" > Save  </label>
+						</div>
+						<div class="radio" style="35%">
+						  <label> <input type="radio" name="save-as" id="optionsRadios2" value="2"> Save to (tentative name, <span class="tt">Slug</span> header in the protocol): </label>
+						</div>
+						<label for="save-container" class="col-sm-2 control-label sr-only">Tentative name</label> <input type="text" class="form-control" value="" id="save-container" placeholder="Tentative name">
+					</div>
+				</div>	
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-primary" onclick="save()" >Save content</button>
+					</div>
+				</div>
+				<hr/>
+			</form>
+		</div>
+	</body>
+</html>	

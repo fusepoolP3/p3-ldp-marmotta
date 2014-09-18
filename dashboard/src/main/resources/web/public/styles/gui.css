@@ -1,0 +1,15 @@
+img#logo {
+  float: right;
+  width: 250px; 
+  margin: 20px 0px;
+}
+
+.tt {
+  font-family: 'Lucida Console', monospace;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 0;
+}
+
