@@ -1,1 +1,8 @@
 language: java
+deploy:
+  provider: releases
+  api_key:
+    secure: jVePNgDMlFaEIO0aGTcnxPQR07C01HGlGBc8lktnsaVfj59NvHnboaW0SWvcquYhTEhc5SxbWVY3K6UybEXVHsHpsf2tLAa4SBzEN49V8zeK6pZjF6+x7M0KDlpGWXkbV23QexSVDPUxGQs0OQqAsauYxw2JgoxMvLvwT6PLR5U=
+  file: webapp/target/marmotta.jar
+  on:
+    repo: fusepoolP3/p3-ldp-marmotta
