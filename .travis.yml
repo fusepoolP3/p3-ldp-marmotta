@@ -6,3 +6,5 @@ deploy:
   file: webapp/target/marmotta.jar
   on:
     repo: fusepoolP3/p3-ldp-marmotta
+    tags: true
+    all_branches: true
