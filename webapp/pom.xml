@@ -35,7 +35,7 @@
     <properties>
         <fusepoolp3.marmotta.context>/</fusepoolp3.marmotta.context>
         <fusepoolp3.marmotta.home>${project.build.directory}${file.separator}fusepoolp3</fusepoolp3.marmotta.home>
-        <finalName>marmotta</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
     </properties>
 
     <build>

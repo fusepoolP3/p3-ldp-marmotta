@@ -1,9 +1,10 @@
 language: java
+before_install: mvn install -DskipTests=true -DfinalName=marmotta-$TRAVIS_TAG
 deploy:
   provider: releases
   api_key:
     secure: jVePNgDMlFaEIO0aGTcnxPQR07C01HGlGBc8lktnsaVfj59NvHnboaW0SWvcquYhTEhc5SxbWVY3K6UybEXVHsHpsf2tLAa4SBzEN49V8zeK6pZjF6+x7M0KDlpGWXkbV23QexSVDPUxGQs0OQqAsauYxw2JgoxMvLvwT6PLR5U=
-  file: webapp/target/marmotta.jar
+  file: webapp/target/marmotta-$TRAVIS_TAG.jar
   on:
     repo: fusepoolP3/p3-ldp-marmotta
     tags: true
