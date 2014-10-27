@@ -81,6 +81,7 @@
                             <phase>package</phase>
                             <configuration>
                                 <finalName>${finalName}.jar</finalName>
+                                <path>${fusepoolp3.marmotta.context}</path>
                                 <extraDependencies>
                                     <extraDependency>
                                         <groupId>com.h2database</groupId>
