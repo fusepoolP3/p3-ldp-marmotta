@@ -3,7 +3,7 @@ p3-ldp-marmotta
 
 Build with
 
-    mvn install
+    mvn clean install
 
 Switch to the webapp dir and run with:
 
