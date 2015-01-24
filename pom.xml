@@ -34,7 +34,7 @@
     <name>Fusepool P3 Platform: Marmotta based LDP Server</name>
 
     <properties>
-        <marmotta.version>3.3.0-SNAPSHOT</marmotta.version>
+        <marmotta.version>3.3.0</marmotta.version>
     </properties>
 
     <repositories>
