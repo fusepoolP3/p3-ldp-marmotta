@@ -9,6 +9,10 @@
 Since the requires postgresql you should first start this:
 
     docker run --name p3ldp-postgres -d postgres
+
+Or if you've done this before:
+
+    docker start p3ldp-postgres
     
 Then run the image with:
 
