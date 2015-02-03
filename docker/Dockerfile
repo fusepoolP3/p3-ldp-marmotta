@@ -16,6 +16,8 @@ RUN chmod +x /usr/local/bin/ldp-marmotta && \
 #    echo "p3ldp:x:1000:1000:p3ldp,,,:/home/p3ldp:/bin/bash" >> /etc/passwd && \
 #    echo "p3ldp:x:1000:" >> /etc/group && 
 
+RUN chown -R p3ldp:p3ldp /tmp/marmotta
+
 RUN cd /usr/local/lib/ && \
    wget https://github.com/fusepoolP3/p3-ldp-marmotta/releases/download/v0.1.0-20150124/marmotta-v0.1.0-20150124.jar
 
