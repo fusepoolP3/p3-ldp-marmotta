@@ -70,8 +70,7 @@
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
-                    <!-- because of MTOMCAT-263 2.2 can't be used -->
-                    <version>2.1</version>
+                    <version>2.2</version>
                     <executions>
                         <execution>
                             <id>tomcat-run</id>
@@ -171,7 +170,13 @@
             <groupId>org.apache.marmotta</groupId>
             <artifactId>marmotta-security</artifactId>
         </dependency>
-
+        <!-- fix for a missing dependency of the Marmotta SparqlWebService -->
+        <dependency>
+          <groupId>commons-collections</groupId>
+          <artifactId>commons-collections</artifactId>
+          <version>3.2.1</version>
+        </dependency>
+        
         <!-- Optional
         <dependency>
             <groupId>org.apache.marmotta</groupId>
@@ -179,6 +184,12 @@
             <version>${marmotta.version}</version>
         </dependency>
         -->
+        
+        <!-- Caching -->
+        <dependency>
+          <groupId>org.apache.marmotta</groupId>
+          <artifactId>kiwi-caching-hazelcast</artifactId>
+        </dependency>
 
         <!-- JavaEE / Servlet / CDI Environment -->
         <dependency>
