@@ -70,7 +70,8 @@
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
-                    <version>2.2</version>
+                    <!-- because of MTOMCAT-263 2.2 can't be used -->
+                    <version>2.1</version>
                     <executions>
                         <execution>
                             <id>tomcat-run</id>
