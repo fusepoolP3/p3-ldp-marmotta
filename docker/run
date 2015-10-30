@@ -1,2 +1,0 @@
-#!/bin/bash
-su p3ldp -c "java -jar /usr/local/lib/marmotta-*.jar"
